@@ -1,0 +1,17 @@
+<script src="https://broadvoice--sfdev2025.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
+
+<div id="lightningLocator"></div>
+
+<script>
+    $Lightning.use("c:embedFlowInExternalWebsite",
+        function() {
+            $Lightning.createComponent(
+                "c:web_to_case",
+                { },                  
+                "lightningLocator",   
+                function(cmp) {}
+            );
+        },
+        'https://broadvoice--sfdev2025.sandbox.my.salesforce-sites.com'
+    );
+</script>
